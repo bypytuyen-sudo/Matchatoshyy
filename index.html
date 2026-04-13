@@ -2,120 +2,165 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Matcha Chill</title>
+<title>Yukishy Matcha</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #f5f7f4;
+    color: #2f3e2f;
 }
 
-/* HEADER */
-header {
-    background: #2e8b57;
-    color: white;
-    padding: 15px;
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
 }
-
+nav h1 {
+    font-weight: 600;
+}
 nav a {
-    color: white;
-    margin: 10px;
     text-decoration: none;
+    color: #2f3e2f;
+    margin-left: 20px;
 }
 
 /* HERO */
 .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: #c7f0d8;
-}
-
-.hero h2 {
-    font-size: 36px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #2e8b57;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+                url('https://images.unsplash.com/photo-1515823064-d6e0c04616a7');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
     color: white;
-    border: none;
-    cursor: pointer;
+}
+.hero h1 {
+    font-size: 50px;
+}
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+.btn {
+    padding: 12px 28px;
+    background: #dbe8d4;
+    color: #2f3e2f;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
-/* PRODUCTS */
-.products {
-    padding: 40px;
-    text-align: center;
+/* SECTION */
+.section {
+    padding: 80px 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+.section h2 {
+    margin-bottom: 20px;
 }
 
+/* PRODUCT */
 .product {
-    display: inline-block;
-    width: 200px;
-    background: white;
-    margin: 15px;
-    padding: 15px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.product img {
+    width: 300px;
     border-radius: 10px;
 }
+.product ul {
+    line-height: 1.8;
+}
 
-.product img {
-    width: 100%;
-    border-radius: 10px;
+/* ABOUT */
+.about {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background: #dbe8d4;
+    padding: 60px;
+    border-radius: 20px;
 }
 
 /* FOOTER */
 footer {
-    background: #2e8b57;
-    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+    background: #2f3e2f;
+    color: white;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Matcha Chill</h1>
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Sản phẩm</a>
-        <a href="#">Liên hệ</a>
-    </nav>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <h1>Yukishy</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+    </div>
+</nav>
 
+<!-- HERO -->
 <section class="hero">
-    <h2>Chill cùng Matcha mỗi ngày</h2>
-    <p>Healthy – Trẻ trung – Tươi mát</p>
-    <a href="https://m.me/yourfacebook">
-        <button>Mua ngay</button>
-    </a>
+    <div>
+        <h1>Matcha Made Vietnam</h1>
+        <p>Your daily dose of calm energy & clarity</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
 </section>
 
-<section class="products">
-    <h2>Sản phẩm nổi bật</h2>
-
+<!-- PRODUCT -->
+<section class="section">
+    <h2>Signature Matcha</h2>
     <div class="product">
         <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256">
-        <h3>Matcha Latte</h3>
-        <p>45.000đ</p>
-        <button>Mua</button>
+        <div>
+            <p>Không chỉ là một ly matcha, đó là một nghi thức sống chậm giữa nhịp sống vội.</p>
+            <ul>
+                <li>🌿 Bột matcha nguyên chất – đậm vị Nhật</li>
+                <li>⚡ Năng lượng bền vững – không crash</li>
+                <li>🧘‍♂️ Tạo trạng thái tập trung & thư giãn</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
     </div>
-
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371">
-        <h3>Matcha Đá Xay</h3>
-        <p>55.000đ</p>
-        <button>Mua</button>
-    </div>
-
 </section>
 
+<!-- ABOUT -->
+<section class="section about">
+    <h2>Our Story</h2>
+    <p>Yukishy được tạo ra từ mong muốn mang matcha chất lượng Nhật Bản đến Việt Nam – một trải nghiệm không chỉ là đồ uống, mà là phong cách sống.</p>
+</section>
+
+<!-- CTA -->
+<section class="section">
+    <div class="cta">
+        <h2>Experience Matcha Differently</h2>
+        <p>Không phải cà phê. Không phải trà. Đây là Yukishy.</p>
+        <a href="#" class="btn">Order Today</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Matcha Chill</p>
+    <p>© 2026 Yukishy Matcha</p>
 </footer>
 
 </body>
